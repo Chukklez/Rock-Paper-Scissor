@@ -28,6 +28,7 @@ computerPlay = computerPlay();
 
 
 // Write a function that has two parameters, playerSelection and computerSelection
+// Create separate if statements for each selection with 1 if, 1 if else and then an else.
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == 'Rock' && computerSelection == 2) {
     return 'You play: ' + playerSelection + "!" + ' Rock Beats Scissors! You Win!';
@@ -50,6 +51,7 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+// add a second const that uses toLowerCase()
 const playerSelection = "Paper";
 const computerSelection = computerPlay;
 
