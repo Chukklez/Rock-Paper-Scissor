@@ -30,29 +30,30 @@ computerPlay = computerPlay();
 // Write a function that has two parameters, playerSelection and computerSelection
 // Create separate if statements for each selection with 1 if, 1 if else and then an else.
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection == 'Rock' && computerSelection == 2) {
+  if (playerSelection == 'rock' && computerSelection == 2) {
     return 'You play: ' + playerSelection + "!" + ' Rock Beats Scissors! You Win!';
-  } else if (playerSelection == 'Rock' && computerSelection == 1) {
+  } else if (playerSelection == 'rock' && computerSelection == 1) {
     return 'You play: ' + playerSelection + "!" + ' Paper beats Rock! You lose!';
-  } else if (playerSelection == 'Rock' && computerSelection == 0) {
+  } else if (playerSelection == 'rock' && computerSelection == 0) {
     return 'You play: ' + playerSelection + "!" + ' It is a tie! Nobody won!';
-  } else if (playerSelection == 'Scissor' && computerSelection == 1) {
+  } else if (playerSelection == 'scissor' && computerSelection == 1) {
     return 'You play: ' + playerSelection + "!"  + ' Scissor beats Paper! You win!';
-  } else if (playerSelection == 'Scissor' && computerSelection == 0) {
+  } else if (playerSelection == 'scissor' && computerSelection == 0) {
     return 'You play: ' + playerSelection + "!"  + ' Rock beats Scissor! You lose!';
-  } else if (playerSelection == 'Scissor' && computerSelection == 2) {
+  } else if (playerSelection == 'scissor' && computerSelection == 2) {
     return 'You play: ' + playerSelection + "!"  + ' It is a tie! Nobody won!';
-  } else if (playerSelection == 'Paper' && computerSelection == 0) {
+  } else if (playerSelection == 'paper' && computerSelection == 0) {
     return 'You play: ' + playerSelection + "!"  + ' Paper beats Rock! You win!';
-  } else if (playerSelection == 'Paper' && computerSelection == 2) {
+  } else if (playerSelection == 'paper' && computerSelection == 2) {
     return 'You play: ' + playerSelection + "!"  + ' Scissor beats Paper! You lose!';
-  } else if (playerSelection == 'Paper' && computerSelection == 1) {
+  } else if (playerSelection == 'paper' && computerSelection == 1) {
     return 'You play: ' + playerSelection + "!"  + ' It is a tie! Nobody won!';
   }
 }
 
 // add a second const that uses toLowerCase()
-const playerSelection = "Paper";
+const playerAnswer = "Paper"
+const playerSelection = playerAnswer.toLowerCase();
 const computerSelection = computerPlay;
 
 // choose which number should be assigned to the computers rock paper and scissor
