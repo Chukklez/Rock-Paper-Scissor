@@ -59,10 +59,10 @@ function playRound(playerSelection, computerSelection) {
 
 //Create a new function called game() that calls the playRound function to play a 5 round game that keeps score and reports a winner or lose at the end.
 function game() {
-  return playRound()
+  return playRound(playerSelection, computerSelection)
 }
 
 
 // output the round to the console
 // console.log(playRound(playerSelection, computerSelection));
-game();
+console.log(game());
