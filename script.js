@@ -70,3 +70,5 @@ function getRounds(){
 // output the round to the console
 // console.log(playRound(playerSelection, computerSelection));
 console.log(game());
+
+//Maybe I can assign values from 0-2 to rock paper scissors to the user input aswell and that way I can do a simpler ruling for what beats what with an if else. That way I can determine who was the winner in a round.
