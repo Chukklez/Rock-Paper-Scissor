@@ -6,7 +6,7 @@ function computerPlay() {
 computerPlay = computerPlay(); //assigning the function computerPlay() to the variable computerPlay 
 
 
-const playerAnswer = "paper" //The player input
+const playerAnswer = "rock" //The player input
 const playerSelection = playerAnswer.toLowerCase(); //Take the playerinput and convert it to lowercase in a new variable called playerSelection
 let computerSelection = computerPlay; //Assign the computerPlay variable into the computerSelection variable
 let result = ""
@@ -31,7 +31,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection == 'rock' && computerSelection == "paper") {
     result = `You play ${playerSelection} and computer played ${computerSelection}! 
     ${computerSelection} beats ${playerSelection}! You lose!`;
-  } else if (playerSelection == 'rock' && computerSelection == "rock") {
+  } else if (playerSelection ==  computerSelection) {
     result = `You play ${playerSelection} and computer played ${computerSelection}!
     It is a tie! Nobody won!`;
     //If player chooses Scissors
@@ -41,7 +41,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection == 'scissors' && computerSelection == "rock") {
     result = `You play ${playerSelection} and computer played rock! 
     rock beats ${playerSelection}! You lose!`
-  } else if (playerSelection == 'scissors' && computerSelection == "scissors") {
+  } else if (playerSelection ==  computerSelection) {
     result = `You play ${playerSelection} and computer played scissors! 
     It is a tie! Nobody won!`;
     //If player chooses paper
@@ -51,7 +51,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection == 'paper' && computerSelection == "scissors") {
     result = `You play ${playerSelection} and computer played ${computerSelection}! 
     ${computerSelection} beats ${playerSelection}! You lose!`
-  } else if (playerSelection == 'paper' && computerSelection == "paper") {
+  } else if (playerSelection ==  computerSelection) {
     result = `You play ${playerSelection} and computer played ${computerSelection}! 
     It is a tie! Nobody won!`;
   } return result;
