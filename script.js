@@ -26,33 +26,33 @@ switch (computerPlay) {
 function playRound(playerSelection, computerSelection) {
   // If player chooses Rock
   if (playerSelection == 'rock' && computerSelection == "scissors") {
-    `You play ${playerSelection} and computer played ${computerSelection}!
+    return `You play ${playerSelection} and computer played ${computerSelection}!
     ${playerSelection} beats ${computerSelection}! You win!`
   } else if (playerSelection == 'rock' && computerSelection == "paper") {
-    `You play ${playerSelection} and computer played ${computerSelection}! 
+    return `You play ${playerSelection} and computer played ${computerSelection}! 
     ${computerSelection} beats ${playerSelection}! You lose!`;
   } else if (playerSelection ==  computerSelection) {
-    `You play ${playerSelection} and computer played ${computerSelection}!
+    return `You play ${playerSelection} and computer played ${computerSelection}!
     It is a tie! Nobody won!`;
     //If player chooses Scissors
   } else if (playerSelection == 'scissors' && computerSelection == "paper") {
-    `You play ${playerSelection} and computer played ${computerSelection}!  
+    return `You play ${playerSelection} and computer played ${computerSelection}!  
     ${playerSelection} beats ${computerSelection}! You win!`
   } else if (playerSelection == 'scissors' && computerSelection == "rock") {
-    `You play ${playerSelection} and computer played rock! 
+    return `You play ${playerSelection} and computer played rock! 
     rock beats ${playerSelection}! You lose!`
   } else if (playerSelection ==  computerSelection) {
-    `You play ${playerSelection} and computer played scissors! 
+    return `You play ${playerSelection} and computer played scissors! 
     It is a tie! Nobody won!`;
     //If player chooses paper
   } else if (playerSelection == 'paper' && computerSelection == "rock") {
-    `You play ${playerSelection} and computer played ${computerSelection}!
+    return `You play ${playerSelection} and computer played ${computerSelection}!
     ${playerSelection} beats ${computerSelection}! You win!`
   } else if (playerSelection == 'paper' && computerSelection == "scissors") {
-    `You play ${playerSelection} and computer played ${computerSelection}! 
+    return `You play ${playerSelection} and computer played ${computerSelection}! 
     ${computerSelection} beats ${playerSelection}! You lose!`
   } else if (playerSelection ==  computerSelection) {
-    `You play ${playerSelection} and computer played ${computerSelection}! 
+    return `You play ${playerSelection} and computer played ${computerSelection}! 
     It is a tie! Nobody won!`;
   }
 } 
@@ -61,7 +61,7 @@ function playRound(playerSelection, computerSelection) {
 // function getRounds(){
 //   i = 5;
 //   for (let i = 0; i < 5; i++);
-//   return `Round ${i} out of 5`
+//   return `Round ${i+1} out of 5`
 // }
 //Create a new function called game() that calls the playRound function to play a 5 round game that keeps score and reports a winner or lose at the end.
 function game() {
@@ -76,6 +76,6 @@ function game() {
 
 // output the round to the console
 // console.log(playRound(playerSelection, computerSelection));
-console.log(game());
+console.log(playRound(playerSelection, computerSelection));
 
 //Maybe I can assign values from 0-2 to rock paper scissors to the user input aswell and that way I can do a simpler ruling for what beats what with an if else. That way I can determine who was the winner in a round.
