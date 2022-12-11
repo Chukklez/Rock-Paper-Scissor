@@ -55,7 +55,7 @@ function playRound(playerSelection, computerSelection) {
     return `You play ${playerSelection} and computer played ${computerSelection}! 
     It is a tie! Nobody won!`;
   }
-} 
+}
 
 //create a functions that keeps track of rounds called getRounds()
 // function getRounds(){
@@ -79,3 +79,8 @@ function game() {
 console.log(playRound(playerSelection, computerSelection));
 
 //Maybe I can assign values from 0-2 to rock paper scissors to the user input aswell and that way I can do a simpler ruling for what beats what with an if else. That way I can determine who was the winner in a round.
+
+
+
+
+
